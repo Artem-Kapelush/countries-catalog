@@ -19,14 +19,14 @@
 
 .countries h2 {
   text-align: center;
-  color: #2c3e50;
+  color: #1d008f;
   font-size: 36px;
 }
 
 .searsh {
   display: flex;
   gap: 15px;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
   flex-wrap: wrap;
 }
 
@@ -120,6 +120,14 @@
 }
 
 @media (max-width: 768px) {
+  .countries {
+    row-gap: 10px;
+  } 
+
+  .searsh {
+    padding-bottom: 0;
+  }
+
   #countries-list {
     grid-template-columns: 1fr 1fr;
     padding: 15px;
@@ -140,6 +148,10 @@
 }
 
 @media (max-width: 450px) {
+  .continent__list {
+    width: 100%;
+  }
+
   #countries-list {
     grid-template-columns: 1fr;
     padding: 10px;
@@ -147,10 +159,6 @@
   
   .country {
     border-radius: 6px;
-  }
-
-  .flag {
-    height: 150px;
   }
   
   .country span {
